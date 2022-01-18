@@ -25,7 +25,7 @@ public class TraceId {
         return new TraceId(id, level + 1); // 레벨 증가, 아이디 동일
     }
 
-    public TraceId previousId() {
+    public TraceId createPreviousId() {
         return new TraceId(id, level - 1); // 레벨 감소, 아이디 동일
     }
 
